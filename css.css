@@ -1,0 +1,237 @@
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* NAV-BAR */
+
+.header {
+    position: relative;
+    width: 80%;
+    height: 59.5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.logo-container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;   
+    margin: 10px 10px; 
+}
+
+.navigation {
+    display: flex;
+    flex: 5 1 auto;
+    justify-content: space-around; 
+    margin: 10px 10px;
+    flex-wrap: wrap;
+}
+
+
+.number{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+
+
+.card {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 10px 10px;
+
+}
+
+.logo-img {
+    width: 50px;
+    height: 59.5px;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo.text {   
+    white-space: nowrap;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    margin-left: 10px;
+}
+
+menu dt{
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    margin: 20px 0;
+    margin-left: 5px;
+}
+
+.number-icon{
+    width: 17px;
+    height: 17px;
+    background-image:url(phone-call.svg);
+}
+
+.number.text{
+    white-space: nowrap;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.card.text{
+    white-space: nowrap;
+    margin-left: 5px;
+    text-align: center;    
+}
+
+.card-img{
+    width: 41px;
+    height: 41px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.card-img.img{
+    background-image: url(shopping-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-dropdown{
+    width: 17px;
+    height: 59.5px;
+    background-image: url(droplist.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.4s ease;
+    padding: 20px;
+}
+
+a::after { 
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #5c5c5c;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+a:hover { color: #5c5c5c; }
+a:hover::after { width: 100%; }
+
+/* MAIN */
+
+.main-block {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    padding-top: 46px;
+    background: linear-gradient(130.63deg, #FFC852 7.69%, #F8AD0E 73.71%);
+}
+
+/* .content-main{
+    display: flex;
+    width: 1600px;    
+} */
+
+.pet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* float: right; */
+}
+
+
+.ellipse-right-light {
+    position: absolute;
+    width: 691px;
+    height: 691px;
+    background: #FFDD94;
+    filter: blur(250px);
+    bottom: 0;
+    right: 0;
+}
+
+.ellipse-main {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 830px;
+    height: 830px; 
+    
+}
+
+.ellipse-main-border{
+    border: 100px solid #FFDD95;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%; 
+}
+.ellipse-inner {
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url(Mask\ Group.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 0;
+}
+
+.ellipse-light {
+    position:absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: #FFDD94;
+    filter: blur(250px);
+    margin: auto;
+    top: 0%;
+}
+
+.main-pets{
+    position: absolute;
+    width: 691px;
+    height: 691px;
+    background-image: url(pets.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+
