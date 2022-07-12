@@ -1,18 +1,31 @@
-.text{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    color: #000000;
-}
-
 body {
     position: relative;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
 }
 
 /* NAV-BAR */
+
+.text-s {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 18px;
+}
+
+.text-800 {
+    font-weight: 800;
+}
+
+.ws-nowrap {
+    white-space: nowrap;
+}
 
 .header {
     position: relative;
@@ -68,49 +81,42 @@ body {
     background-position: center;
 }
 
-.logo.text {   
-    white-space: nowrap;
-    font-weight: 800;
-    font-size: 18px;
+.logo-text {   
     line-height: 22px;
     letter-spacing: 0.1em;
     margin-left: 10px;
 }
 
-menu dt{
+menu dt {
     font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
     margin: 20px 0;
     margin-left: 5px;
 }
 
-.number-icon{
+.number-icon {
     width: 17px;
     height: 17px;
     background-image:url(phone-call.svg);
 }
 
-.number.text{
-    white-space: nowrap;
-    font-weight: 800;
-    font-size: 14px;
+.number-text {
     line-height: 17px;
 }
 
-.card.text{
-    white-space: nowrap;
+.card-text {
     margin-left: 5px;
     text-align: center;    
 }
 
-.card-img{
+.card-img {
     width: 41px;
     height: 41px;
     background-color: #000000;
     border-radius: 50%;
 }
 
-.card-img.img{
+.card-img.img {
     background-image: url(shopping-cart.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,7 +124,7 @@ menu dt{
     height: 100%;
 }
 
-.card-dropdown{
+.card-dropdown {
     width: 17px;
     height: 59.5px;
     background-image: url(droplist.svg);
@@ -194,13 +200,14 @@ a:hover::after { width: 100%; }
     
 }
 
-.ellipse-main-border{
+.ellipse-main-border {
     border: 100px solid #FFDD95;
     border-radius: 50%;
     box-sizing: border-box;
     width: 100%;
     height: 100%; 
 }
+
 .ellipse-inner {
     position: absolute;
     border-radius: 50%;
