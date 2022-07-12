@@ -15,7 +15,7 @@ body {
     font-size: 14px;
 }
 
-.text-sm {
+.text-ls-s {
     letter-spacing: 2px;
 }
 
@@ -182,7 +182,7 @@ a:hover::after { width: 100%; }
 
 .main-block {
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     width: 100%;
     height: 900px;
     padding-top: 46px;
@@ -195,9 +195,6 @@ a:hover::after { width: 100%; }
     padding-top: 10%;
 }
 
-.main-text {
-
-}
 
 .main-input-button {
     background: linear-gradient(98.77deg, #F63D3D 34.76%, #D80707 80.19%);
@@ -311,7 +308,6 @@ a:hover::after { width: 100%; }
     padding: 15px;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .slaider-nav {
