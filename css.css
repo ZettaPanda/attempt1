@@ -306,6 +306,12 @@ a:hover::after { width: 100%; }
     height: 290.65px;
     margin-right: 33px;
     margin-bottom: 33px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .slaider-nav {
@@ -322,6 +328,33 @@ a:hover::after { width: 100%; }
 
 .right {
     background-image: url(right.svg);
+}
+
+.slaider.one {
+    background-image: url(Dog.svg);
+    color: #FFAE00;
+}
+
+.slaider.two {
+    background-image: url(fly.svg);
+    color: #29771D;
+}
+
+.inner-content-nav {
+    display: flex;
+    align-items: center;
+}
+
+.inner-text-nav {
+    padding-right: 10px;
+}
+
+.inner-nav {
+    width: 13px;
+    height: 13px;
+    background-image: url(inner-nav.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
