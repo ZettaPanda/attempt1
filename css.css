@@ -15,8 +15,8 @@ body {
     font-size: 14px;
 }
 
-.text-ls-s {
-    letter-spacing: 2px;
+.text-l {
+    font-size: 30px;
 }
 
 .text-xl {
@@ -31,8 +31,20 @@ body {
     font-size: 18px;
 }
 
+.text-ls-s {
+    letter-spacing: 2px;
+}
+
+.text-200 {
+    font-weight: 200;
+}
+
 .text-400 {
     font-weight: 400;
+}
+
+.text-500 {
+    font-weight: 500;
 }
 
 .text-800 {
@@ -280,14 +292,15 @@ a:hover::after { width: 100%; }
     width: 80%;
     margin: auto;
     background-color: #ffffff;
+    position: relative;
 }
 
 .slaider-menu {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    position: relative;
-    top: -210px;
+    position: absolute;
+    top: -245px;
 } 
 
 .slaider-active {
@@ -355,12 +368,12 @@ a:hover::after { width: 100%; }
     background-position: center;
 }
 
-.slider-indicators-content {
+.slaider-indicators-container {
     position: absolute;
     bottom: 0;
-    left: 15%;
+    left: 28%;
 }
-.slider-indicators {
+.slaider-indicators {
     right: 0;
     bottom: 0;
     left: 0;
@@ -377,7 +390,7 @@ a:hover::after { width: 100%; }
     position: relative;
 }
 
-.slider-indicators dt {
+.slaider-indicators dt {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 48px;
@@ -388,13 +401,13 @@ a:hover::after { width: 100%; }
     z-index: 1;
 }
 
-.slider-indicators dt.active {
+.slaider-indicators dt.active {
     background-color: #565656;
     width: 48px;
     height: 11px;
 } 
 
-.slider-indicators dt.left.active {
+.slaider-indicators dt.left.active {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
 
@@ -409,11 +422,59 @@ a:hover::after { width: 100%; }
     z-index: 0;
 }
 
-.slider-indicators dt.right.active {
+.slaider-indicators dt.right.active {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
 
+.container-info-inner {
+    display: flex;
+    align-items: center;
+}
 
+.container-info-inner dt {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
 
+.img-info-pet {
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.img-info-pet.dogs {
+    background-color: rgba(81, 213, 35, 0.26);
+    background-image: url(dog-info.svg);
+}
+
+.img-info-pet.health {
+    background-color: rgba(249, 182, 39, 0.26);
+    background-image: url(first-aid-kit.svg);
+}
+
+.img-info-pet.love {
+    background-color: rgba(225, 49, 67, 0.26);
+    background-image: url(love.svg);
+}
+
+.info-pet-nowrap {
+    padding: 30px;
+}
+
+.container-info-inner dt h4{
+    margin: 0;
+}
+
+.container-info-inner dt h2{
+    margin: 0;
+}
+
+.content-block-container-info {
+    top: 246px;
+    position: relative;
+}
