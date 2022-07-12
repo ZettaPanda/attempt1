@@ -472,6 +472,7 @@ a:hover::after { width: 100%; }
 
 .container-info-inner dt h2{
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .content-block-container-info {
