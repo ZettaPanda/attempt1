@@ -9,6 +9,11 @@ body {
     color: #000000;
 }
 
+.main-text-container{
+    width: 80%;
+    margin: auto;
+}
+
 /* NAV-BAR */
 
 .text-s {
