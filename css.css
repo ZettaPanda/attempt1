@@ -15,8 +15,8 @@ body {
     font-size: 14px;
 }
 
-.text-ls-s {
-    letter-spacing: 2px;
+.text-l {
+    font-size: 30px;
 }
 
 .text-xl {
@@ -31,8 +31,20 @@ body {
     font-size: 18px;
 }
 
+.text-ls-s {
+    letter-spacing: 2px;
+}
+
+.text-200 {
+    font-weight: 200;
+}
+
 .text-400 {
     font-weight: 400;
+}
+
+.text-500 {
+    font-weight: 500;
 }
 
 .text-800 {
@@ -90,7 +102,6 @@ body {
     flex: 1;
     justify-content: space-around;
     margin: 10px 10px;
-
 }
 
 .logo-img {
@@ -189,7 +200,7 @@ a:hover::after { width: 100%; }
     background: linear-gradient(130.63deg, #FFC852 7.69%, #F8AD0E 73.71%);
 }
 
-.main-text-container{
+.main-text-container {
     width: 80%;
     margin: auto;
     padding-top: 10%;
@@ -232,7 +243,6 @@ a:hover::after { width: 100%; }
     border-radius: 50%;
     width: 830px;
     height: 830px; 
-    
 }
 
 .ellipse-main-border {
@@ -265,7 +275,7 @@ a:hover::after { width: 100%; }
     top: 0%;
 }
 
-.main-pets{
+.main-pets {
     position: absolute;
     width: 691px;
     height: 691px;
@@ -280,22 +290,23 @@ a:hover::after { width: 100%; }
     width: 80%;
     margin: auto;
     background-color: #ffffff;
+    position: relative;
 }
 
-.slaider-menu {
+.slider-menu {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    position: relative;
-    top: -210px;
+    position: absolute;
+    top: -245px;
 } 
 
-.slaider-active {
+.slider-active {
     display: flex;
     flex-wrap: wrap;
 }
 
-.slaider {
+.slider {
     background: #FFFFFF;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
@@ -310,7 +321,7 @@ a:hover::after { width: 100%; }
     background-position: center;
 }
 
-.slaider-nav {
+.slider-nav {
     box-sizing: border-box;
     width: 48.68px;
     height: 48.68px;
@@ -322,16 +333,18 @@ a:hover::after { width: 100%; }
     background-position: center;
 }
 
-.right {
+
+
+.slider-nav.right {
     background-image: url(right.svg);
 }
 
-.slaider.one {
+.slider.one {
     background-image: url(Dog.svg);
     color: #FFAE00;
 }
 
-.slaider.two {
+.slider.two {
     background-image: url(fly.svg);
     color: #29771D;
 }
@@ -353,6 +366,111 @@ a:hover::after { width: 100%; }
     background-position: center;
 }
 
+.slider-indicators-container {
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+}
 
+.slider-indicators {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    position: relative;
+}
 
+.slider-indicators dt {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 48px;
+    height: 5px;
+    cursor: pointer;
+    background-color: #D5D5D5;
+    background-clip: padding-box;
+    z-index: 1;
+}
 
+.slider-indicators dt.active {
+    background-color: #565656;
+    width: 48px;
+    height: 11px;
+} 
+
+.slider-indicators dt.left.active {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.helper-claider-indicators {
+    width: 230px;
+    height: 5px;
+    background-color: #D5D5D5;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.slider-indicators dt.right.active {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container-info-inner {
+    display: flex;
+    align-items: center;
+}
+
+.container-info-inner dt {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.img-info-pet {
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-info-pet.dogs {
+    background-color: rgba(81, 213, 35, 0.26);
+    background-image: url(dog-info.svg);
+}
+
+.img-info-pet.health {
+    background-color: rgba(249, 182, 39, 0.26);
+    background-image: url(first-aid-kit.svg);
+}
+
+.img-info-pet.love {
+    background-color: rgba(225, 49, 67, 0.26);
+    background-image: url(love.svg);
+}
+
+.info-pet-container-text {
+    padding: 30px;
+}
+
+.container-info-inner dt h4,
+.container-info-inner dt h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.content-block-container-info {
+    top: 246px;
+    position: relative;
+}
