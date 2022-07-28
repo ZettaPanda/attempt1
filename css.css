@@ -20,7 +20,7 @@ body {
 }
 
 .text-xl {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .text-m {
@@ -431,7 +431,6 @@ a:hover::after { width: 100%; }
 .container-info-inner {
     display: flex;
     align-items: center;
-    padding-bottom: 97px
 }
 
 .container-info-inner dt {
@@ -493,8 +492,6 @@ a:hover::after { width: 100%; }
 
 .container-catalog-animal h1 {
     padding-top: 25px;
-    margin: 0;
-    color: #402c00;
 }
 
 .sort-animal ol {
@@ -507,7 +504,7 @@ a:hover::after { width: 100%; }
 }
 
 .sort-animal {
-    margin-top: 86px;
+    margin-bottom: 26px;
 }
 
 .sort-button {
@@ -522,7 +519,7 @@ a:hover::after { width: 100%; }
     font-weight: 600;
 }
 
-.list-animal-container {
+.list-animal-container{
     display: flex;
     align-items: center;
     padding: 0;
@@ -532,14 +529,12 @@ a:hover::after { width: 100%; }
 
 .animal-card {
     position: relative;
-    margin-top: 39px;
     width: 370px;
     height: 420px;
     background: #FFFFFF;
     border-radius: 20px;
     flex: 1;
     margin-right: 30px;
-    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.4));
 }
 
 .animal-card h4, .animal-card h6 {
@@ -551,10 +546,10 @@ a:hover::after { width: 100%; }
     color: #0B8217;
 }
 
-.items-catalog-container { 
-    padding: 0 49px;
-    height: 80%;
-    margin: auto;
+.items-catalog-container {
+   width: 80%;
+   height: 80%;
+   margin: auto;
 }
 
 .up-info-items-catalog {
@@ -569,14 +564,14 @@ a:hover::after { width: 100%; }
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 13px;
-    margin-right: 49px;
+    margin-top: 18px;
+    margin-right: 10%;
 }
 
 .age {
     display: flex;
-    width: 31px;
-    height: 31px;
+    width: 31.39px;
+    height: 31.39px;
     border: 1px solid #AAAAAA;
     border-radius: 50%;
     align-items: center;
@@ -596,78 +591,20 @@ a:hover::after { width: 100%; }
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 49px;
-    margin-bottom: 39px;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 .button-card-list-left {
    position: absolute;
    top: 45%;
    left: -4%;
-   margin-right: 49px;
+   margin-right: 40px;
 }
 
 .button-card-list-right {
     position: absolute;
     top: 45%;
     right: -2%;
-    margin-left: 49px;
-}
-
-.animal-img-card-helper {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-card-animal {
-    display: flex;
-    justify-content: center;
-    margin-top: 52px;
-    padding-bottom: 62px;
-}
-
-.nav-card-animal .nav-card {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-left: 23px;
-    background: #D5D5D5;
-}
-
-.nav-card-animal .active.nav-card  {
-    background: #565656;
-}
-
-.we-love-to-play {
-    width: 80%;
-    height: 100%;   
-    margin: auto;
-    margin-bottom: 100px;
-}
-
-.container-we-love-to-play-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.img-we-love-to-play {
-    filter: drop-shadow(0px 4px 20px rgba(26, 47, 86, 0.5));
-    border-radius: 10px;
-
-    margin-bottom: 30px;
-}
-
-
-.we-love-to-play-text {
-   display: block;
-   flex: none;
-   flex-wrap: nowrap;
-   margin-top: 82px;
-   margin-bottom: 38px;
-}
-
-.container-img-we-love-to-play {
-    width: 370px; 
-    margin-right: auto;
-    padding-right: 5px;
+    margin-left: 40px;
 }
